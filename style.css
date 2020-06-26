@@ -1,8 +1,8 @@
-/***
+/*------------------------------------
 Just a personal project------
 https://coderdurjoy.github.io/
 https://coderdurjoy.com/
-**/
+------------------------------------*/
 
 * {
     margin: 0;
@@ -19,9 +19,13 @@ h1,
 h2,
 p,
 span {
-    line-height: 1.5em;
+    line-height: 1.7em;
     color: #c3c3c3;
     letter-spacing: 1.3px;
+}
+
+h2 {
+    font-weight: 400;
 }
 
 p {
@@ -34,15 +38,12 @@ a {
 }
 
 .demo-box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
 }
 
 .social-profile {
@@ -67,7 +68,45 @@ a {
     -o-border-radius: 50%;
 }
 
-/* Social icons hover */
+/*--------- Social icons hover ---------*/
 .social-profile a:hover i {
     color: #085c9c;
+}
+
+
+/* ----------Responsive code ----------*/
+
+@media(max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .social-profile i {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        padding: 8px;
+    }
+}
+
+@media(max-width: 380px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
 }
