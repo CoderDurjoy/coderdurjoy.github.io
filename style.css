@@ -19,6 +19,7 @@ body {
     background-repeat: no-repeat;
     color: #d5d5d5;
     z-index: 999;
+    overflow-x: hidden;
 }
 
 hr {
